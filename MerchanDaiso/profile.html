@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title> MerchanDaiso - Profile </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background: #fff;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            width: 250px;
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar a {
+            color: #bdc3c7;
+            display: block;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .sidebar a:hover {
+            background: #34495e;
+            color: white;
+        }
+
+        main {
+            flex: 1;
+            background: #fff;
+            padding: 60px;
+        }
+
+        .profile-box {
+            max-width: 500px;
+            margin: auto;
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .profile-box p {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: #bbb;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-img {
+            width: 100px;  
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class = "logo-container">
+            <img src = "MDLogo.png" alt = "MerchanDaiso Logo" class = "logo-img">
+            <span class = "logo-text"> MerchanDaiso </span>
+        </div>
+    </header>
+
+        <div class = "main-container">
+            <nav class = "sidebar">
+                <ul>
+                    <li><a href = "MerchanDaiso.html"> Home </a></li>
+                    <li><a href = "login.html"> Logout </a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <h2 style = "text-align:center; margin-bottom:20px;"> User Profile </h2>
+
+        <div class = "profile-box">
+            <p><strong> First Name: </strong> Viyonce Lexi </p>
+            <p><strong> Last Name: </strong> Yazar </p>
+            <p><strong> Email: </strong> viyazar@email.com </p>
+            <p><strong> Mobile: </strong> +63 9123456789 </p>
+            <p><strong> Address: </strong> Rizal, Philippines </p>
+        </div>
+            </main>
+
+        </div>
+
+    <footer>
+        <p> © 2025 MerchanDaiso Official </p>
+    </footer>
+
+</body>
+</html>
