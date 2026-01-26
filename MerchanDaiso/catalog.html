@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title> MerchanDaiso - Product Catalog </title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma;
+                background: #f4f4f9;
+            }
+
+            header {
+                background: #fff;
+                padding: 20px;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .main-container {
+                display: flex;
+            }
+
+            .sidebar {
+                width: 250px;
+                background: #2c3e50;
+                color: white;
+                padding: 20px;
+            }
+
+            .sidebar a {
+                color: #bdc3c7;
+                display: block;
+                padding: 10px;
+            }
+
+            .sidebar a:hover {
+                background: #34495e;
+                color: white;
+            }
+
+            main {
+                flex: 1;
+                padding: 40px;
+                background: #fff;
+            }
+
+            .product {
+                background: #f9f9f9;
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+            }
+
+            .btn-pink {
+                background: #e91e63;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header><strong> MerchanDaiso</strong></header>
+
+        <div class = "main-container">
+            <nav class = "sidebar">
+                <li><a href = "MerchanDaiso"> Home </a></li>
+                <li><a href = "about.html"> About Us </a></li>
+                <li><a href = "contact.html">Contact Us </a></li>
+                <li><a href = "login.html"> Login </a></li>
+                <li><a href = "signup.html"> Sign Up </a></li>
+                <li><a href = "catalog.html"> Products </a></li>
+                <li><a href = "cart.html"> Cart </a></li>
+            </nav>
+
+            <main>
+                <h2> Product Catalog </h2>
+
+                <div class = "product-grid">
+                    <h3> Anime Figurine </h3>
+                    <p> ₱ 1,800 </p>
+                    <button class = "btn-pink"> Add to Cart </button>
+                </div>
+
+                <div class = "product">
+                    <h3> Anime Hoodie </h3>
+                    <p> ₱ 1,500 </p>
+                    <button class = "btn-pink"> Add to Cart </button>
+                </div>
+            </div>
+            </main>
+        </div>
+
+    </body>
+</html>

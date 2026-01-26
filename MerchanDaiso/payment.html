@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MerchanDaiso Payment Method & Delivery </title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma;
+            background: #fff;
+            padding: 40px;
+        }
+
+        select,button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+        }
+
+        .btn-pink {
+            background: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2> Payment & Delivery </h2>
+
+        <label> Payment Method </label>
+        <select>
+            <option> GCash </option>
+            <option> Credit Card </option>
+            <option> Cash on Delivery </option>
+        </select>
+
+        <label> Delivery Options </label>
+        <select>
+            <option> Standard Delivery </option>
+            <option> Priority Delivery </option>
+        </select>
+
+        <button class = "btn-pink" onclick="processPayment()"> Confirm Payment </button>
+
+        <p id = "status"></p>
+    </main>
+
+    <script>
+        function processPayment() {
+            document.getElementById("status").innerText = "Processing Payment...";
+
+            const paymentPromise = new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    resolve("Payment Successful");
+                }, 2000);
+            });
+
+            paymentPromise.then(message => {
+                document.getElementById("status").innerText = message;
+                setTimeout(() => {
+                    window.location.href = "confirmation.html";
+                }, 1000);
+            });
+        }
+    </script>
+</body>
+</html>
