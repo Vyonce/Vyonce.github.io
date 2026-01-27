@@ -1,70 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> MerchanDaiso Payment Method & Delivery </title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma;
-            background: #fff;
-            padding: 40px;
-        }
-
-        select,button {
-            width: 100%;
-            padding: 10px;
-            margin-top: 15px;
-        }
-
-        .btn-pink {
-            background: #e91e63;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-    </style>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title> MerchanDaiso - Payment & Delivery </title>
+    <link rel = "stylesheet" href = "style.css">
 </head>
-
 <body>
-    <main>
-        <h2> Payment & Delivery </h2>
 
-        <label> Payment Method </label>
+    <header>
+        <div class = "logo-container">
+            <img src = "MDLogo.png" alt = "MerchanDaiso Logo" class = "logo-img">
+            <span class = "logo-text"> MerchanDaiso </span>
+        </div>
+    </header>
+    
+        <div class = "main-container">
+    
+    <nav class = "sidebar">
+        <ul>
+            <li><a href = "MerchanDaiso.html"> Home </a></li>
+            <li><a href = "catalog.html"> Product Catalog </a></li>
+            <li><a href = "cart.html" class = "active"> Shopping Cart </a></li>
+            <li><a href = "payment.html"> Payment & Delivery </a></li>
+            <li><a href = "contact.html"> Contact Us </a></li>
+            <li><a href = "about.html"> About Us </a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1> Payment & Delivery </h1><br>
+
         <select>
             <option> GCash </option>
             <option> Credit Card </option>
-            <option> Cash on Delivery </option>
-        </select>
-
-        <label> Delivery Options </label>
+            <option> Cash On Delivery </option></select><br><br>
         <select>
             <option> Standard Delivery </option>
-            <option> Priority Delivery </option>
-        </select>
+            <option> Express </option>
+        </select><br><br>
 
-        <button class = "btn-pink" onclick="processPayment()"> Confirm Payment </button>
-
-        <p id = "status"></p>
+    <button class = "btn-pink" onclick = "pay()"> Pay Now </button>
+        <p id="status"></p>
     </main>
+</div>
+
+    <footer>
+        <p> © 2025 MerchanDaiso </p>
+    </footer>
 
     <script>
-        function processPayment() {
-            document.getElementById("status").innerText = "Processing Payment...";
+        function pay(){
+            document.getElementById("status").innerText="Processing payment...";
+            new Promise(resolve=>{
+            setTimeout(()=>resolve("Success"),2000);
+        }).then(()=>{
+            window.location.href="confirmation.html";
+        });
+    }
+</script>
 
-            const paymentPromise = new Promise((resolve, reject) => {
-                setTimeout(() => {
-                    resolve("Payment Successful");
-                }, 2000);
-            });
-
-            paymentPromise.then(message => {
-                document.getElementById("status").innerText = message;
-                setTimeout(() => {
-                    window.location.href = "confirmation.html";
-                }, 1000);
-            });
-        }
-    </script>
 </body>
 </html>

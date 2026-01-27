@@ -4,226 +4,7 @@
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <title> MerchanDaiso - Home </title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-    
-        .btn-pink {
-            background-color: #e91e63;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-pink:hover {
-            background-color: #c2185b;
-        }
-
-   
-        header {
-            background-color: #fff;
-            padding: 20px;
-            border-bottom: 1px solid #ddd;
-            display: flex;
-            align-items: center;
-        }
-
-      
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #333;
-          
-        }
-
-    
-        .main-container {
-            display: flex;
-            flex: 1; 
-        }
-
-        
-        .sidebar {
-            width: 250px;
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            flex-shrink: 0; 
-        }
-
-        .sidebar ul {
-            list-style: none;
-        }
-
-        .sidebar li {
-            margin-bottom: 15px;
-        }
-
-        .sidebar a {
-            color: #bdc3c7;
-            display: block;
-            padding: 10px;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-
-        .sidebar a:hover, .sidebar a.active {
-            color: white;
-            background-color: #34495e;
-        }
-
-   
-        main {
-            flex: 1; 
-            background-color: #fff;
-        }
-
-        .hero {
-          
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images3.alphacoders.com/785/thumb-1920-785576.png');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-       
-        .featured-products {
-            padding: 40px;
-            text-align: center;
-        }
-
-        .featured-products h2 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            color: #333;
-        }
-
-       
-        .category-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            justify-content: center;
-        }
-
-        
-        .cat-card {
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            padding-bottom: 20px;
-            transition: transform 0.3s ease;
-        }
-
-        .cat-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .cat-img-container {
-            height: 200px;
-            overflow: hidden;
-            background-color: #eee;
-        }
-
-        .cat-img-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; 
-        }
-
-        .cat-card h3 {
-            margin: 15px 0 10px;
-            color: #333;
-        }
-
-        .cat-card p {
-            color: #666;
-            font-size: 0.9rem;
-            padding: 0 15px;
-            margin-bottom: 15px;
-        }
-
-      
-        footer {
-            background-color: #1a1a1a;
-            color: #fff;
-            text-align: center;
-        }
-
-        .footer-cta {
-            padding: 40px 20px;
-            border-bottom: 1px solid #333;
-        }
-
-        .footer-cta h2 {
-            margin-bottom: 10px;
-        }
-
-        .footer-info {
-            padding: 20px;
-            font-size: 0.9rem;
-            color: #bbb;
-        }
-        
-       
-        .contact-details {
-            margin-top: 10px;
-            font-style: italic;
-        }
-
-        .logo-container {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .logo-img {
-            width: 100px;  
-            height: 40px;
-            object-fit: contain;
-        }
-
-    .logo-text {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #333;
-    }
-    </style>
+    <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
 
@@ -239,12 +20,14 @@
         <nav class = "sidebar">
             <ul>
                 <li><a href = "MerchanDaiso.html" class = "active"> Home </a></li>
-                <li><a href = "about.html"> About Us </a></li>
-                <li><a href = "contact.html">Contact Us </a></li>
                 <li><a href = "login.html"> Login </a></li>
                 <li><a href = "signup.html"> Sign Up </a></li>
-                <li><a href = "catalog.html"> Products </a></li>
-                <li><a href = "cart.html"> Cart </a></li>
+                <li><a href = "catalog.html"> Product Catalog </a></li>
+                <li><a href = "cart.html"> Shopping Cart </a></li>
+                <li><a href = "payment.html"> Payment & Delivery </a></li>
+                <li><a href = "contact.html"> Contact Us </a></li>
+                <li><a href = "about.html"> About Us </a></li>
+                
             </ul>
         </nav>
 
@@ -252,7 +35,7 @@
             <section class = "hero">
                 <h1> MerchanDaiso Official </h1>
                 <p> Your ultimate store for anime merch! </p>
-                <button class = "btn-pink"> Browse Products </button>
+                <a href = "catalog.html"><button class = "btn-pink"> Browse Products </button></a>
             </section>
 
             <section class = "featured-products">
